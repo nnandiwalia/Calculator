@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container df aic jcc">
+        <div class="body df fdc jcsb">
+            <div class="header df aic jcsb">
+                <div class="menu cp df aic"><ion-icon name="menu-outline" onclick="toggleMenu()"></ion-icon></div>
+                <div class="heading df aic">Calculator</div>
+                <div class="mode df aic cp" onclick="changeMode()">
+                    <ion-icon class="day" name="sunny-outline"></ion-icon>
+                    <ion-icon class="night dn" name="moon-outline" style="font-size: 1.35rem;"></ion-icon>
+                </div>
+            </div>
+            <div class="display df fdc jce">
+                <div class="content">0</div>
+            </div>
+            <div class="buttons">
+                <div class="btn cp df jcc aic btn1" onclick="btnClick(this)">C</div>
+                <div class="btn cp df jcc aic btn2" onclick="btnClick(this)">(</div>
+                <div class="btn cp df jcc aic btn3" onclick="btnClick(this)">)</div>
+                <div class="btn cp df jcc aic btn4" onclick="btnClick(this)">/</div>
+                <div class="btn cp df jcc aic btn5" onclick="btnClick(this)">7</div>
+                <div class="btn cp df jcc aic btn6" onclick="btnClick(this)">8</div>
+                <div class="btn cp df jcc aic btn7" onclick="btnClick(this)">9</div>
+                <div class="btn cp df jcc aic btn8" onclick="btnClick(this)">*</div>
+                <div class="btn cp df jcc aic btn9" onclick="btnClick(this)">4</div>
+                <div class="btn cp df jcc aic btn10" onclick="btnClick(this)">5</div>
+                <div class="btn cp df jcc aic btn11" onclick="btnClick(this)">6</div>
+                <div class="btn cp df jcc aic btn12" onclick="btnClick(this)">-</div>
+                <div class="btn cp df jcc aic btn13" onclick="btnClick(this)">1</div>
+                <div class="btn cp df jcc aic btn14" onclick="btnClick(this)">2</div>
+                <div class="btn cp df jcc aic btn15" onclick="btnClick(this)">3</div>
+                <div class="btn cp df jcc aic btn16" onclick="btnClick(this)">0</div>
+                <div class="btn cp df jcc aic btn17" onclick="btnClick(this)">.</div>
+                <div class="btn cp df jcc aic btn18" onclick="calculate()">=</div>
+                <div class="btn cp df jcc aic btn19" onclick="btnClick(this)">+</div>
+            </div>
+            <div class="body menuBar df fdc jcsb">
+                <div class="header df aic jcsb">
+                    <div class="heading">Calculator</div>
+                    <ion-icon class="cp" name="close-outline" onclick="toggleMenu()"></ion-icon>
+                </div>
+                <ul>
+                    <li class="cp df aic">
+                        <ion-icon name="star-half-outline"></ion-icon>
+                        <div>Rate</div>
+                    </li>
+                    <li class="cp df aic">
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <div>Share</div>
+                    </li>
+                    <li class="cp df aic">
+                        <ion-icon name="settings-outline"></ion-icon>
+                        <div>Settings</div>
+                    </li>
+                    <li class="cp df aic">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <div>About</div>
+                    </li>
+                </ul>
+                <footer>
+                    Designed by Naresh Bazidpuria
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
